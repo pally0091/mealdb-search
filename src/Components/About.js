@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const About = () => {
   return (
-    <div className="bg-gray-200 flex flex-row items-center p-2 w-8/12 mx-auto h-96 mt-12 rounded-lg border-2 border-black ">
+    <div className="bg-gray-200 flex flex-row items-center p-2 w-8/12 mx-auto h-96 mt-32 mb-32 rounded-lg border-2 border-black ">
       <div className="w-3/5 text-right p-6">
         <h1 className="text-4xl font-bold">Fazlay Rabbi</h1>
         <p className="font-bold">

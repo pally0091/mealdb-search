@@ -5,7 +5,7 @@ import { AiFillFacebook, AiFillGitlab, AiFillLinkedin } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <header className="bg-white h-24 flex border-b-black border-2">
+    <header className="bg-white h-24 fixed w-full top-0 flex border-b-black border-2">
       <Link
         to="/"
         className="border flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8"
@@ -24,8 +24,8 @@ const Header = () => {
             </Link>
           </li>
           <li className="p-3 xl:p-6">
-            <Link to="/search">
-              <span>SEARCH</span>
+            <Link to="/meals">
+              <span>MEALS</span>
             </Link>
           </li>
           <li className="p-3 xl:p-6">
