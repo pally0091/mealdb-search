@@ -24,6 +24,14 @@ function App() {
           element: <Meals></Meals>,
         },
         {
+          path: "/meals/:id",
+          element: <Meals></Meals>,
+          loader: ({ params }) =>
+            fetch(
+              `https://www.themealdb.com/api/json/v1/1/filter.php?c=${params.id}`
+            ),
+        },
+        {
           path: "/about",
           element: <About></About>,
         },
