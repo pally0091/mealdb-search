@@ -13,7 +13,7 @@ const Categories = () => {
 
   return (
     <div>
-      <h1>Categories : {categories.length}</h1>
+      <h1 className="text-center">Categories : {categories.length}</h1>
       <div>
         {categories.map((category) => (
           <h4

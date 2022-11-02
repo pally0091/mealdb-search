@@ -4,6 +4,7 @@ import Main from "./Components/Main";
 import Home from "./Components/Home";
 import Meals from "./Components/Meals";
 import About from "./Components/About";
+import MealDetail from "./Components/MealDetail";
 
 function App() {
   const router = createBrowserRouter([
@@ -22,7 +23,8 @@ function App() {
         {
           path: "/meals/Beef",
           element: <Meals></Meals>,
-          loader: ()=> fetch ("https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef")
+          loader: () =>
+            fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef"),
         },
         {
           path: "/meals/:id",
@@ -30,6 +32,14 @@ function App() {
           loader: ({ params }) =>
             fetch(
               `https://www.themealdb.com/api/json/v1/1/filter.php?c=${params.id}`
+            ),
+        },
+        {
+          path: "/meal/:id",
+          element: <MealDetail></MealDetail>,
+          loader: ({ params }) =>
+            fetch(
+              `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`
             ),
         },
         {
