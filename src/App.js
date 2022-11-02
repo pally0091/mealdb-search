@@ -20,8 +20,9 @@ function App() {
           element: <Home></Home>,
         },
         {
-          path: "/meals",
+          path: "/meals/Beef",
           element: <Meals></Meals>,
+          loader: ()=> fetch ("https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef")
         },
         {
           path: "/meals/:id",

@@ -24,7 +24,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="p-3 xl:p-6">
-            <Link to="/meals">
+            <Link to="/meals/Beef">
               <span>MEALS</span>
             </Link>
           </li>
