@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Meal = ({ meal }) => {
   const { strMeal, idMeal, strMealThumb } = meal;
   return (
-    <div className="w-3/12 mx-10 mt-6 p-4 rounded-2xl h-[30rem] shadow-xl shadow-black text-center">
+    <div className="w-3/12 bg-slate-300 mx-10 mt-6 p-4 rounded-2xl h-[30rem] shadow-xl shadow-black text-center">
       <div className=" border-2 border-black h-[26rem]">
         <img
           className="shadow-lg shadow-black"
