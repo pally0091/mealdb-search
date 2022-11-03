@@ -10,7 +10,7 @@ const Meals = () => {
   // console.log(meals.meals);
 
   return (
-    <div className="mt-32 mb-16 flex flex-row p-6 bg-sky-200 opacity-95">
+    <div className="mt-32 mb-16 flex flex-row p-6 bg-sky-100 ">
       <div className="w-2/12 p-3 ">
         <Categories></Categories>
       </div>
